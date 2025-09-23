@@ -3,20 +3,20 @@ import {
   View,
   Text,
   StyleSheet,
-  SafeAreaView,
   TouchableOpacity,
   Image,
   Alert,
   ActivityIndicator,
 } from "react-native";
-import { Camera } from "expo-camera";
+import { Camera, CameraView } from "expo-camera";
+import { SafeAreaView } from "react-native-safe-area-context"; // FIXED: Use this instead
 import { MaterialIcons, Ionicons } from "@expo/vector-icons";
 import { Colors } from "../constants/Colors";
 
 const ScanScreen = () => {
   const [hasPermission, setHasPermission] = useState(null);
   const [cameraReady, setCameraReady] = useState(false);
-  const [type, setType] = useState(Camera.Constants.Type.back);
+  const [facing, setFacing] = useState("back"); // FIXED: Use string instead of Camera.Constants.Type
   const [capturedImage, setCapturedImage] = useState(null);
   const [isCapturing, setIsCapturing] = useState(false);
 
@@ -47,6 +47,7 @@ const ScanScreen = () => {
         });
         setCapturedImage(photo.uri);
       } catch (error) {
+        console.error("Capture error:", error);
         Alert.alert("Capture Failed", "Unable to capture photo. Try again.");
       } finally {
         setIsCapturing(false);
@@ -58,6 +59,43 @@ const ScanScreen = () => {
     setCapturedImage(null);
   };
 
+  // FIXED: Toggle camera function
+  const toggleCameraFacing = () => {
+    setFacing((current) => (current === "back" ? "front" : "back"));
+  };
+
+  const handleAnalyze = async () => {
+    if (!capturedImage) return;
+
+    try {
+      Alert.alert("Processing", "Sending image for analysis...");
+
+      // TODO: Send image to your backend
+      // const formData = new FormData();
+      // formData.append('image', {
+      //   uri: capturedImage,
+      //   type: 'image/jpeg',
+      //   name: 'ingredient-image.jpg',
+      // });
+
+      // const response = await fetch('http://your-server:5000/api/upload-image', {
+      //   method: 'POST',
+      //   body: formData,
+      //   headers: {
+      //     'Content-Type': 'multipart/form-data',
+      //   },
+      // });
+
+      // const result = await response.json();
+      // if (result.success) {
+      //   // Navigate to results screen or show results
+      // }
+    } catch (error) {
+      console.error("Analysis error:", error);
+      Alert.alert("Analysis Failed", "Unable to analyze image. Try again.");
+    }
+  };
+
   if (hasPermission === null) {
     return (
       <SafeAreaView style={styles.containerCentered}>
@@ -66,6 +104,7 @@ const ScanScreen = () => {
       </SafeAreaView>
     );
   }
+
   if (hasPermission === false) {
     return (
       <SafeAreaView style={styles.containerCentered}>
@@ -80,34 +119,29 @@ const ScanScreen = () => {
     <SafeAreaView style={styles.container}>
       {!capturedImage ? (
         <View style={styles.cameraContainer}>
-          <Camera
+          {/* FIXED: Use CameraView with facing prop */}
+          <CameraView
             ref={cameraRef}
             style={styles.camera}
-            type={type}
+            facing={facing}
             onCameraReady={() => setCameraReady(true)}
-            ratio="16:9"
           >
             <View style={styles.cameraControls}>
               <TouchableOpacity
                 style={styles.flipButton}
-                onPress={() => {
-                  setType(
-                    type === Camera.Constants.Type.back
-                      ? Camera.Constants.Type.front
-                      : Camera.Constants.Type.back
-                  );
-                }}
+                onPress={toggleCameraFacing}
                 activeOpacity={0.8}
               >
                 <Ionicons name="camera-reverse" size={36} color="white" />
               </TouchableOpacity>
             </View>
-          </Camera>
+          </CameraView>
+
           <TouchableOpacity
             style={styles.captureButton}
             onPress={handleCapture}
             activeOpacity={0.7}
-            disabled={isCapturing}
+            disabled={isCapturing || !cameraReady}
           >
             <View
               style={[
@@ -131,9 +165,7 @@ const ScanScreen = () => {
             </TouchableOpacity>
             <TouchableOpacity
               style={styles.previewButton}
-              onPress={() =>
-                Alert.alert("Processing", "Send image for analysis")
-              }
+              onPress={handleAnalyze}
               activeOpacity={0.7}
             >
               <MaterialIcons name="send" size={24} color={Colors.primary} />
@@ -189,7 +221,7 @@ const styles = StyleSheet.create({
   },
   captureButton: {
     position: "absolute",
-    bottom: 40,
+    bottom: 80, // Changed from 40 to 80 (moves button higher)
     alignSelf: "center",
     width: 70,
     height: 70,

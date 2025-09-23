@@ -11,21 +11,26 @@ import {
   Modal,
   TextInput,
   Linking,
+  ActivityIndicator,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons, MaterialIcons } from "@expo/vector-icons";
 import { Colors } from "../constants/Colors";
+import { authAPI } from "../services/api";
 
-const ProfileScreen = () => {
-  const [user, setUser] = useState({
-    name: "John Doe",
-    email: "john.doe@email.com",
-    phone: "+1 234 567 8900",
-    joinDate: "March 2024",
-    totalScans: 1247,
-    healthScore: 85,
-    premium: false,
-  });
+const ProfileScreen = ({ user: propUser, onLogout }) => {
+  // Use props user data or fallback to mock data
+  const [user, setUser] = useState(
+    propUser || {
+      name: "John Doe",
+      email: "john.doe@email.com",
+      phone: "+1 234 567 8900",
+      joinDate: "March 2024",
+      totalScans: 1247,
+      healthScore: 85,
+      premium: false,
+    }
+  );
 
   const [settings, setSettings] = useState({
     notifications: true,
@@ -38,20 +43,22 @@ const ProfileScreen = () => {
   const [editModalVisible, setEditModalVisible] = useState(false);
   const [editField, setEditField] = useState("");
   const [editValue, setEditValue] = useState("");
+  const [loading, setLoading] = useState(false);
 
   // Profile stats
   const profileStats = [
     {
       id: 1,
       title: "Products Scanned",
-      value: user.totalScans.toLocaleString(),
+      value:
+        user.totalScans?.toLocaleString() || user.scansCount?.toString() || "0",
       icon: "qr-code-scanner",
       color: Colors.primary,
     },
     {
       id: 2,
       title: "Health Score",
-      value: `${user.healthScore}/100`,
+      value: `${user.healthScore || 85}/100`,
       icon: "favorite",
       color: Colors.success,
     },
@@ -86,7 +93,8 @@ const ProfileScreen = () => {
           id: "subscription",
           title: "Subscription",
           icon: "card-membership",
-          subtitle: user.premium ? "Premium Active" : "Free Plan",
+          subtitle:
+            user.premium || user.isPremium ? "Premium Active" : "Free Plan",
           action: () => handleSubscription(),
         },
         {
@@ -201,7 +209,10 @@ const ProfileScreen = () => {
     Alert.alert("Edit Profile", "What would you like to edit?", [
       { text: "Name", onPress: () => openEditModal("name", user.name) },
       { text: "Email", onPress: () => openEditModal("email", user.email) },
-      { text: "Phone", onPress: () => openEditModal("phone", user.phone) },
+      {
+        text: "Phone",
+        onPress: () => openEditModal("phone", user.phone || ""),
+      },
       { text: "Cancel", style: "cancel" },
     ]);
   };
@@ -212,19 +223,49 @@ const ProfileScreen = () => {
     setEditModalVisible(true);
   };
 
-  const saveEditProfile = () => {
-    setUser((prev) => ({
-      ...prev,
-      [editField]: editValue,
-    }));
-    setEditModalVisible(false);
-    Alert.alert("Success", "Profile updated successfully!");
+  const saveEditProfile = async () => {
+    if (!editValue.trim()) {
+      Alert.alert("Error", "Please enter a valid value");
+      return;
+    }
+
+    setLoading(true);
+    try {
+      // Update profile on backend if user is from API
+      if (propUser && propUser.id) {
+        const result = await authAPI.updateProfile({
+          [editField]: editValue.trim(),
+        });
+
+        if (result.success) {
+          setUser((prev) => ({
+            ...prev,
+            [editField]: editValue.trim(),
+          }));
+          Alert.alert("Success", "Profile updated successfully!");
+        } else {
+          Alert.alert("Error", result.message || "Failed to update profile");
+        }
+      } else {
+        // Local update for mock data
+        setUser((prev) => ({
+          ...prev,
+          [editField]: editValue.trim(),
+        }));
+        Alert.alert("Success", "Profile updated successfully!");
+      }
+    } catch (error) {
+      Alert.alert("Error", "Failed to update profile. Please try again.");
+    } finally {
+      setLoading(false);
+      setEditModalVisible(false);
+    }
   };
 
   const handleSubscription = () => {
     Alert.alert(
       "Subscription",
-      user.premium
+      user.premium || user.isPremium
         ? "Manage your Premium subscription"
         : "Upgrade to Premium for advanced features!",
       [
@@ -305,12 +346,29 @@ const ProfileScreen = () => {
     ]);
   };
 
+  // ✅ WORKING LOGOUT FUNCTION
   const handleLogout = () => {
     Alert.alert("Sign Out", "Are you sure you want to sign out?", [
       {
         text: "Sign Out",
         style: "destructive",
-        onPress: () => console.log("Logout"),
+        onPress: async () => {
+          setLoading(true);
+          try {
+            // Call API logout to clear token from secure storage
+            await authAPI.logout();
+
+            // Call parent logout handler to reset app state
+            if (onLogout) {
+              onLogout();
+            }
+          } catch (error) {
+            console.error("Logout error:", error);
+            Alert.alert("Error", "Failed to sign out. Please try again.");
+          } finally {
+            setLoading(false);
+          }
+        },
       },
       { text: "Cancel", style: "cancel" },
     ]);
@@ -337,6 +395,7 @@ const ProfileScreen = () => {
       style={[styles.menuItem, item.danger && styles.dangerMenuItem]}
       onPress={() => (item.toggle ? null : item.action())}
       activeOpacity={0.7}
+      disabled={loading}
     >
       <View style={styles.menuItemLeft}>
         <View
@@ -370,6 +429,7 @@ const ProfileScreen = () => {
             onValueChange={item.action}
             trackColor={{ false: Colors.border, true: Colors.primary + "50" }}
             thumbColor={item.value ? Colors.primary : Colors.textLight}
+            disabled={loading}
           />
         ) : (
           <Ionicons name="chevron-forward" size={20} color={Colors.textLight} />
@@ -377,6 +437,21 @@ const ProfileScreen = () => {
       </View>
     </TouchableOpacity>
   );
+
+  // Show loading overlay when logging out
+  if (loading) {
+    return (
+      <SafeAreaView style={styles.container} edges={["top"]}>
+        <View style={styles.header}>
+          <Text style={styles.headerTitle}>Profile</Text>
+        </View>
+        <View style={styles.loadingContainer}>
+          <ActivityIndicator size="large" color={Colors.primary} />
+          <Text style={styles.loadingText}>Signing out...</Text>
+        </View>
+      </SafeAreaView>
+    );
+  }
 
   return (
     <SafeAreaView style={styles.container} edges={["top"]}>
@@ -397,7 +472,9 @@ const ProfileScreen = () => {
           <View style={styles.avatarContainer}>
             <Image
               source={{
-                uri: "https://via.placeholder.com/100x100/4CAF50/white?text=JD",
+                uri: `https://ui-avatars.com/api/?name=${encodeURIComponent(
+                  user.name || "User"
+                )}&background=667eea&color=fff&size=100`,
               }}
               style={styles.avatar}
             />
@@ -409,9 +486,16 @@ const ProfileScreen = () => {
           <View style={styles.profileInfo}>
             <Text style={styles.userName}>{user.name}</Text>
             <Text style={styles.userEmail}>{user.email}</Text>
-            <Text style={styles.joinDate}>Member since {user.joinDate}</Text>
+            <Text style={styles.joinDate}>
+              Member since{" "}
+              {user.joinDate ||
+                new Date(user.memberSince || Date.now()).toLocaleDateString(
+                  "en-US",
+                  { month: "long", year: "numeric" }
+                )}
+            </Text>
 
-            {user.premium && (
+            {(user.premium || user.isPremium) && (
               <View style={styles.premiumBadge}>
                 <MaterialIcons
                   name="workspace-premium"
@@ -481,7 +565,10 @@ const ProfileScreen = () => {
           <View style={styles.modalContent}>
             <View style={styles.modalHeader}>
               <Text style={styles.modalTitle}>Edit {editField}</Text>
-              <TouchableOpacity onPress={() => setEditModalVisible(false)}>
+              <TouchableOpacity
+                onPress={() => setEditModalVisible(false)}
+                disabled={loading}
+              >
                 <MaterialIcons name="close" size={24} color={Colors.text} />
               </TouchableOpacity>
             </View>
@@ -492,21 +579,31 @@ const ProfileScreen = () => {
               onChangeText={setEditValue}
               placeholder={`Enter ${editField}`}
               autoFocus={true}
+              editable={!loading}
             />
 
             <View style={styles.modalButtons}>
               <TouchableOpacity
                 style={styles.modalCancelButton}
                 onPress={() => setEditModalVisible(false)}
+                disabled={loading}
               >
                 <Text style={styles.modalCancelText}>Cancel</Text>
               </TouchableOpacity>
 
               <TouchableOpacity
-                style={styles.modalSaveButton}
+                style={[
+                  styles.modalSaveButton,
+                  loading && styles.modalSaveButtonDisabled,
+                ]}
                 onPress={saveEditProfile}
+                disabled={loading}
               >
-                <Text style={styles.modalSaveText}>Save</Text>
+                {loading ? (
+                  <ActivityIndicator size="small" color="white" />
+                ) : (
+                  <Text style={styles.modalSaveText}>Save</Text>
+                )}
               </TouchableOpacity>
             </View>
           </View>
@@ -536,6 +633,16 @@ const styles = StyleSheet.create({
   },
   scrollView: {
     flex: 1,
+  },
+  loadingContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  loadingText: {
+    marginTop: 10,
+    fontSize: 16,
+    color: Colors.textSecondary,
   },
   profileCard: {
     backgroundColor: Colors.surface,
@@ -783,6 +890,9 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.primary,
     alignItems: "center",
     marginLeft: 10,
+  },
+  modalSaveButtonDisabled: {
+    backgroundColor: Colors.primary + "60",
   },
   modalSaveText: {
     fontSize: 16,
