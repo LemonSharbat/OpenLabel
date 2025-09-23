@@ -1,0 +1,40 @@
+{
+  "nutrients": [
+    "energy",
+    "protein",
+    "carbohydrate",
+    "sugars",
+    "dietary_fiber",
+    "fat",
+    "saturated_fat",
+    "trans_fat",
+    "cholesterol",
+    "sodium",
+    "salt",
+    "vitamin_a",
+    "vitamin_c",
+    "vitamin_d",
+    "calcium",
+    "iron",
+    "potassium"
+  ],
+  "commonAliases": {
+    "energy": ["energy", "calories", "kcal"],
+    "protein": ["protein"],
+    "carbohydrate": ["carbohydrate", "carbs", "carbohydrates"],
+    "sugars": ["sugar", "sugars", "of which sugars"],
+    "dietary_fiber": ["fiber", "fibre", "dietary fiber"],
+    "fat": ["fat", "total fat"],
+    "saturated_fat": ["saturated fat", "sat fat"],
+    "trans_fat": ["trans fat"],
+    "cholesterol": ["cholesterol"],
+    "sodium": ["sodium"],
+    "salt": ["salt"],
+    "vitamin_a": ["vitamin a", "vit a"],
+    "vitamin_c": ["vitamin c", "vit c"],
+    "vitamin_d": ["vitamin d", "vit d"],
+    "calcium": ["calcium"],
+    "iron": ["iron"],
+    "potassium": ["potassium"]
+  }
+}

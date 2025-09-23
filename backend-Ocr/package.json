@@ -1,0 +1,22 @@
+{
+  "name": "open_newbackend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@azure-rest/ai-document-intelligence": "^1.1.0",
+    "@azure/ai-form-recognizer": "^5.1.0",
+    "@azure/ai-openai": "^1.2.0",
+    "axios": "^1.12.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "jimp": "^1.6.0",
+    "mongoose": "^8.18.2",
+    "multer": "^2.0.2",
+    "openai": "^5.22.1",
+    "tesseract.js": "^6.0.1"
+  }
+}
