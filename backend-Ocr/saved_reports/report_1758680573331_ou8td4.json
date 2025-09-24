@@ -1,0 +1,270 @@
+{
+  "id": "report_1758680573331_ou8td4",
+  "savedAt": "2025-09-24T02:22:53.331Z",
+  "analysis": {
+    "imageUrl": "https://res.cloudinary.com/dhg1f3dab/image/upload/v1758680563/ingredient-analysis/jvjhkf0aeliudmfmxnxy.jpg",
+    "extractedText": "Ugen Regn. No. PR-08-FLAJ-OF-KAACUDIRSE-22 Ture Playz are registerke batch no and see below. N1 - PepsiCo Iridia Holdings Put. Ltd., Lic. No. 10012063000110 N2 - PepsiCo Indi Holdings Pvt. Ltd., Lic. No. 10012022000339 N3 - PepsiCo India Holdings Pvt. Ltd., Lic. No. 10012031000120. VB - Varun Beverages Limited., Lic. Nc. 10012051000428 JF - JDB Foods, Lic. No. 10323999000130.\nAF - Ameya Foods, Lic. No. 11221999000261.\nPROPRIETARY FOOD - NAMKEEN (15.1)\nINGREDIENTS: Cereal Products (67%) (Corn Meal (53%), Rice .. (14%), Edible Vegetable Oil (Rice Bran Oil), ** Seasoning \"Cwaar, lodised Salt, Maltodextrin, \"Spices and Condiments, Milk Solids, Cheese russder, Salt Substitute (Potassium Chloride), Edible Starch, Yeast Extract, Flavour Enhancers (627, 631), Flavour (Natural and Nature Identical Flavouring Substances), Acidity Regulators (296, 330), Colour (150d), Gram Meal, Firming Agent (170(1), lodised Salt. ** As Flavouring Ay .* ~ Contains Onion and Garlic.\nALLERGEN ADVICE: Contains milk & Soy. May Contain Wheat.\nNutrition Information^ Serve Size 20 g **\nNutrients\nPer 100g\n%RDA Per Serve\n5%\nEnergy\n536 kcal\nProtein\n6.4 g\nCarbohydrate\n66.5 g\nTotal Sugars\n4.5 g\nAdded Sugars\n4.1 g\n296\nTotal Fat\n27.1 g\n8%\nSaturated Fat\n6.4 g\n5%\nTrans Fat\n0.1 g\n1%\nSodium\n770 mg\n8%\nApproximate Values\n-20 g is a single consumption pack. MRP Rs. 10/- (INCL. OF ALL TAXES)\nUNIT SALE PRICE:\nEFERVES\nRs. 0.36/- PER g\nMXI .NO .: 14/ AF 300825\nMFD & USE BY:\n30/08/25 & 28/12/25\nNET QTY:\n28 g\nLa\n4\nSituation · Crazy?\nKurku\n<\n(Intel TAKE IT EASY\nA\nCORE\n>\nWindows7\n\"For details on Byl\nvisit www.pep\nMARKETED BY: PepsiCo India Holding: At Lo\nfssat Mkt. Lic No. 1001406400045 For Mkt. address, scan Bact vi- Smart Consumer Ags\n\"or feedback or quenie Manufacturing Date) te THE CONSUMER PEPSICO INDIA P.O. DUX-2- DU-400 GURUGRAM - OR CALL USA OR EMAIL US\nCONSUMER ESTORMKAPEL",
+    "possibleIngredients": [
+      "lic. nc. 10012051000428 jf - jdb foods",
+      "lic. no. 10323999000130.",
+      "af - ameya foods",
+      "lic. no. 11221999000261.",
+      "proprietary food - namkeen (15.1)",
+      "cereal products (67%) (corn meal (53%)",
+      "rice .. (14%)",
+      "edible vegetable oil (rice bran oil)",
+      "** seasoning \"cwaar",
+      "lodised salt",
+      "maltodextrin",
+      "\"spices and condiments",
+      "milk solids",
+      "cheese russder",
+      "salt substitute (potassium chloride)",
+      "edible starch",
+      "yeast extract",
+      "flavour enhancers (627",
+      "631)",
+      "acidity regulators (296"
+    ],
+    "analysisResults": [
+      {
+        "name": "lic. nc. 10012051000428 jf - jdb foods",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "lic. no. 10323999000130.",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "af - ameya foods",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "lic. no. 11221999000261.",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "proprietary food - namkeen (15.1)",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "cereal products (67%) (corn meal (53%)",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "rice .. (14%)",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "edible vegetable oil (rice bran oil)",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "** seasoning \"cwaar",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "lodised salt",
+        "healthScore": -1,
+        "warnings": [
+          "High sodium content"
+        ],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "avoid"
+      },
+      {
+        "name": "maltodextrin",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "\"spices and condiments",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "milk solids",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "cheese russder",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "salt substitute (potassium chloride)",
+        "healthScore": -1,
+        "warnings": [
+          "High sodium content"
+        ],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "avoid"
+      },
+      {
+        "name": "edible starch",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "yeast extract",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "flavour enhancers (627",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "631)",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "acidity regulators (296",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      }
+    ],
+    "productRecommendation": {
+      "recommendation": "caution",
+      "healthGrade": "C",
+      "buyAdvice": "⚠️ Use Caution - Mixed ingredients, consume in moderation",
+      "confidence": 23,
+      "averageScore": -0.1,
+      "reasoning": [],
+      "summary": {
+        "totalIngredients": 20,
+        "harmfulCount": 0,
+        "beneficialCount": 0,
+        "highSeverityCount": 0,
+        "overallScore": 4.8
+      }
+    },
+    "totalIngredients": 20,
+    "overallScore": 4.8,
+    "cloudinaryInfo": {
+      "public_id": "ingredient-analysis/jvjhkf0aeliudmfmxnxy",
+      "width": 750,
+      "height": 1000
+    },
+    "analysisMetadata": {
+      "analyzedAt": "2025-09-24T02:22:46.013Z",
+      "standards": "WHO & OpenFoodFacts",
+      "version": "2.0",
+      "processingTime": "0 seconds"
+    }
+  },
+  "summary": {
+    "totalIngredients": 20,
+    "overallScore": 4.8,
+    "warningCount": 2
+  },
+  "imageInfo": {
+    "imageUrl": "https://res.cloudinary.com/dhg1f3dab/image/upload/v1758680563/ingredient-analysis/jvjhkf0aeliudmfmxnxy.jpg",
+    "cloudinaryInfo": {
+      "public_id": "ingredient-analysis/jvjhkf0aeliudmfmxnxy",
+      "width": 750,
+      "height": 1000
+    }
+  },
+  "metadata": {
+    "savedFrom": "mobile_app_scan",
+    "deviceInfo": {
+      "platform": "android",
+      "timestamp": "2025-09-24T02:22:54.254Z"
+    }
+  },
+  "purchaseDecision": {
+    "decision": "bought",
+    "decidedAt": "2025-09-24T02:23:29.206Z",
+    "notes": "",
+    "recommendation": "caution"
+  }
+}

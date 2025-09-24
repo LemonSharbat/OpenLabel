@@ -1,0 +1,272 @@
+{
+  "id": "report_1758679346260_g34i99",
+  "savedAt": "2025-09-24T02:02:26.260Z",
+  "analysis": {
+    "imageUrl": "https://res.cloudinary.com/dhg1f3dab/image/upload/v1758679312/ingredient-analysis/q60byky9icz0cnpuruzz.jpg",
+    "extractedText": "N1 - PepsiCo India Hol N2 - PepsiCo India Holding N3 - PepsiCo India Holdings --- Www.comny\nVB - Varun Beverages Limited., Lic. 00/1991205100028 JF - JDB Foods, Lic. No. 10323999000130.\nAF - Ameya Foods, Lic. No. 11221999000261\nPROPI IETARY FOOD - NAMKEEN (15.1)\nINGREDIEN\n: Cereal Products (67%) (Com Meal (53%), Rice Meal\nVegetable Oil (Rice Brac Oil), ** Seasoning (Sugar, lodised\nSalt, A todextrin, \"Spices and Condiments,\nFINAL. Cheese Powder,\nSalt St stitute (\"btassium Chloride), Edible Storch).\n· flavour\nEnhancers (627, 631), Flavour (Natural and\nSubstances), Acidity Regulators (29%, Javi, Laour (vw, uram Meal,\nFirming Agent (170(1), lodised Salt.\n** As Flavouring Agent. \"Contains Onion and Garlic\nALLERGEN ADVICE: Contains Milk & Soy. May Contain Wheat\nNutrition Information Serve Size 20 g **\nNutrients\nPer 100g\n%RDA Per Serve\nEnergy\n6.4 g\n536 kcal\nProtein\nCarbohydrate\n66.5 g\nTotal Sugars\n4.5g\nAdded Sugars\n4.1 g\nTotal Fat\n27.1 g\nSaturated Fat\n6.4 g\n1%\nTrans Fat\n0.1 g\nSodium\n770 mg\nAApproximate Values\n** Pack < 20 g is a single consumption pack. 'MRP Rs. 10/- (INCL. OF ALL TAXES)\nANIT SALE PRICE:\nNO. OF SERVES RS. 0.36 - PER | PER PACK B. NO .: 14/ 17300825 l\nMFD & USE BY.\n30/08/25 & 28/12/28\nPITERDASHIP MATES\n+\n@\nTAX\nZ\na ITER\nMARKETED BY: PepsiCo India Holding As\nfssat Mike. Lic. No. 10014ONDE For Mit address, can Becat vi Smart Consumer ks\nFor feedback or queries vet Manufacturing Datei i THE CONSUMER SERY PEPSICO INONA HOLD ELL 801-27, DUF QUITAS BRUGKAM - 122002. OR CALL US AT 1800 NO EMAIL US AT CONSUMER FEEDBACK\nCORE'-",
+    "possibleIngredients": [
+      "vb - varun beverages limited.",
+      "lic. 00/1991205100028 jf - jdb foods",
+      "lic. no. 10323999000130.",
+      "af - ameya foods",
+      "lic. no. 11221999000261",
+      "propi ietary food - namkeen (15.1)",
+      "ingredien",
+      "cereal products (67%) (com meal (53%)",
+      "rice meal",
+      "vegetable oil (rice brac oil)",
+      "** seasoning (sugar",
+      "lodised",
+      "salt",
+      "a todextrin",
+      "\"spices and condiments",
+      "final. cheese powder",
+      "salt st stitute (\"btassium chloride)",
+      "edible storch).",
+      "· flavour",
+      "enhancers (627"
+    ],
+    "analysisResults": [
+      {
+        "name": "vb - varun beverages limited.",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "lic. 00/1991205100028 jf - jdb foods",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "lic. no. 10323999000130.",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "af - ameya foods",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "lic. no. 11221999000261",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "propi ietary food - namkeen (15.1)",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "ingredien",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "cereal products (67%) (com meal (53%)",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "rice meal",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "vegetable oil (rice brac oil)",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "** seasoning (sugar",
+        "healthScore": -2,
+        "warnings": [
+          "High sugar content"
+        ],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "medium",
+        "recommendation": "avoid"
+      },
+      {
+        "name": "lodised",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "salt",
+        "healthScore": -1,
+        "warnings": [
+          "High sodium content"
+        ],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "avoid"
+      },
+      {
+        "name": "a todextrin",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "\"spices and condiments",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "final. cheese powder",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "salt st stitute (\"btassium chloride)",
+        "healthScore": -1,
+        "warnings": [
+          "High sodium content"
+        ],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "avoid"
+      },
+      {
+        "name": "edible storch).",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "· flavour",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "enhancers (627",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      }
+    ],
+    "productRecommendation": {
+      "recommendation": "caution",
+      "healthGrade": "C",
+      "buyAdvice": "⚠️ Use Caution - Mixed ingredients, consume in moderation",
+      "confidence": 26,
+      "averageScore": -0.2,
+      "reasoning": [],
+      "summary": {
+        "totalIngredients": 20,
+        "harmfulCount": 0,
+        "beneficialCount": 0,
+        "highSeverityCount": 0,
+        "overallScore": 4.7
+      }
+    },
+    "totalIngredients": 20,
+    "overallScore": 4.7,
+    "cloudinaryInfo": {
+      "public_id": "ingredient-analysis/q60byky9icz0cnpuruzz",
+      "width": 750,
+      "height": 1000
+    },
+    "analysisMetadata": {
+      "analyzedAt": "2025-09-24T02:01:55.704Z",
+      "standards": "WHO & OpenFoodFacts",
+      "version": "2.0",
+      "processingTime": "1 seconds"
+    }
+  },
+  "summary": {
+    "totalIngredients": 20,
+    "overallScore": 4.7,
+    "warningCount": 3
+  },
+  "imageInfo": {
+    "imageUrl": "https://res.cloudinary.com/dhg1f3dab/image/upload/v1758679312/ingredient-analysis/q60byky9icz0cnpuruzz.jpg",
+    "cloudinaryInfo": {
+      "public_id": "ingredient-analysis/q60byky9icz0cnpuruzz",
+      "width": 750,
+      "height": 1000
+    }
+  },
+  "metadata": {
+    "savedFrom": "mobile_app_scan",
+    "deviceInfo": {
+      "platform": "android",
+      "timestamp": "2025-09-24T02:02:27.210Z"
+    }
+  },
+  "purchaseDecision": {
+    "decision": "bought",
+    "decidedAt": "2025-09-24T02:21:23.003Z",
+    "notes": "",
+    "recommendation": "caution"
+  }
+}
