@@ -1,0 +1,264 @@
+{
+  "id": "report_1758668491226_q7l3nm",
+  "savedAt": "2025-09-23T23:01:31.226Z",
+  "analysis": {
+    "imageUrl": "https://res.cloudinary.com/dhg1f3dab/image/upload/v1758668473/ingredient-analysis/k4me2fk0qdfp6toaq3zg.jpg",
+    "extractedText": "pepsiCe maka Holdings Pvt. Ltd, Lic. Na.10012031000120 Fare Beverages Limited, Lic. No. 10012051000428. - ipe Foods, Lic. No. 10323999000130. e - Aneya Foods, Lic. No. 11221999000261\nINGREDIENTS: Cereal Products (67%) (Com Meal (53%), Rice Meal 1416]), Edible Vegetable Oil (Rice Bran Oil), ** Seasoning (Sugar, lodised Salt, Maltodextrin, \"Spices and Condiments, Milk Solids, Cheese Powder, ut Substitute (Potassium Chloride), Edible Starch, Yeast Extract, Flavour sincers (627, 631), Flavour (Natural and Nature Identical Flavouring Istances), Acidity Regulators (296, 330), Colour (150d), Gram Meal. vming Agent (170(1)), lodised Salt. -A Favouring Agent. \"Contains Onion and Garlic. LLERGEN ADVICE: Contains Milk & Soy. May Contain Wheat.\nPROPRIETARY FOOD - NAMKEEN (15.1)\nServe Size 20 g **\nNutrition Information^\nPer 100g 536 kcal\n9%RDA Per Serve\n5%\nEnergy 6.4 g\nProtein\nCarbohydrate 66,5 g\nTotal Sugars\n4.5 g\nAdded Sugars\n4.1 g\n29\n8%\nTotal Fat 27.1 g\nSaturated Fat\n6.4 g\n1%\nTrans Fat\n0.1 g\nPidium\n770 mg\n8%\nApproximate Values\n*< 20 g is a sit consumption pack.\n* 10/- (* .. CE ALL TAXES)\nATSALE P&\nNO. OF SERVES Rs. 0.36/- PER g PER PACK/ 3. NO .: 1.4/ AF300825 10-20\nMFD & USE BY: 30/08/25 & 28/12/25\nSituation\nCrazy?\nKurk\nT\nIT\n+For det partner visit w\nMARKE TED BY: PepsiCo India Holdin\nfssai Mkt. Lic. No. 1001406 For Mkt. address, sca via Smart Consumer A\nFor feediatraes: Manufammior THE CONNERS PEPSI CONDA P.O. BOX-\nGURUGR\nOR CALL OR EMA\nCONSUN",
+    "possibleIngredients": [
+      "pepsice maka holdings pvt. ltd",
+      "lic. na.10012031000120 fare beverages limited",
+      "lic. no. 10012051000428. - ipe foods",
+      "lic. no. 10323999000130. e - aneya foods",
+      "lic. no. 11221999000261",
+      "cereal products (67%) (com meal (53%)",
+      "rice meal 1416])",
+      "edible vegetable oil (rice bran oil)",
+      "** seasoning (sugar",
+      "lodised salt",
+      "maltodextrin",
+      "\"spices and condiments",
+      "milk solids",
+      "cheese powder",
+      "ut substitute (potassium chloride)",
+      "edible starch",
+      "yeast extract",
+      "flavour sincers (627",
+      "631)",
+      "acidity regulators (296"
+    ],
+    "analysisResults": [
+      {
+        "name": "pepsice maka holdings pvt. ltd",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "lic. na.10012031000120 fare beverages limited",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "lic. no. 10012051000428. - ipe foods",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "lic. no. 10323999000130. e - aneya foods",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "lic. no. 11221999000261",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "cereal products (67%) (com meal (53%)",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "rice meal 1416])",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "edible vegetable oil (rice bran oil)",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "** seasoning (sugar",
+        "healthScore": -2,
+        "warnings": [
+          "High sugar content"
+        ],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "medium",
+        "recommendation": "avoid"
+      },
+      {
+        "name": "lodised salt",
+        "healthScore": -1,
+        "warnings": [
+          "High sodium content"
+        ],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "avoid"
+      },
+      {
+        "name": "maltodextrin",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "\"spices and condiments",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "milk solids",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "cheese powder",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "ut substitute (potassium chloride)",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "edible starch",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "yeast extract",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "flavour sincers (627",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "631)",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "acidity regulators (296",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      }
+    ],
+    "productRecommendation": {
+      "recommendation": "caution",
+      "healthGrade": "C",
+      "buyAdvice": "⚠️ Use Caution - Mixed ingredients, consume in moderation",
+      "confidence": 25,
+      "averageScore": -0.1,
+      "reasoning": [],
+      "summary": {
+        "totalIngredients": 20,
+        "harmfulCount": 0,
+        "beneficialCount": 0,
+        "highSeverityCount": 0,
+        "overallScore": 4.8
+      }
+    },
+    "totalIngredients": 20,
+    "overallScore": 4.8,
+    "cloudinaryInfo": {
+      "public_id": "ingredient-analysis/k4me2fk0qdfp6toaq3zg",
+      "width": 1000,
+      "height": 750
+    },
+    "analysisMetadata": {
+      "analyzedAt": "2025-09-23T23:01:16.920Z",
+      "standards": "WHO & OpenFoodFacts",
+      "version": "2.0",
+      "processingTime": "0 seconds"
+    }
+  },
+  "summary": {
+    "totalIngredients": 20,
+    "overallScore": 4.8,
+    "warningCount": 2
+  },
+  "imageInfo": {
+    "imageUrl": "https://res.cloudinary.com/dhg1f3dab/image/upload/v1758668473/ingredient-analysis/k4me2fk0qdfp6toaq3zg.jpg",
+    "cloudinaryInfo": {
+      "public_id": "ingredient-analysis/k4me2fk0qdfp6toaq3zg",
+      "width": 1000,
+      "height": 750
+    }
+  },
+  "metadata": {
+    "savedFrom": "mobile_app_scan",
+    "deviceInfo": {
+      "platform": "android",
+      "timestamp": "2025-09-23T23:01:30.923Z"
+    }
+  }
+}

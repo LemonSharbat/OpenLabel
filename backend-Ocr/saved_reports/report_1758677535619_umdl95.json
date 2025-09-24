@@ -1,0 +1,266 @@
+{
+  "id": "report_1758677535619_umdl95",
+  "savedAt": "2025-09-24T01:32:15.619Z",
+  "analysis": {
+    "imageUrl": "https://res.cloudinary.com/dhg1f3dab/image/upload/v1758677474/ingredient-analysis/s0f8gjwp9htj9rvxfisr.jpg",
+    "extractedText": "Kurkure & Kar ..... Plats are MFD. BY: For manufacture batch no, and see below N1 - PepsiCo India Holdings Pvt. Ltd .. Lic. No. 1001-022000339. N2 - PepsiCo India Holdings Pvt. Ltd., Lic. No. N3 - PepsiCo India Holdings Pvt. Ltd., Lic. No.10012031000120. VB - Varun Beverages Limited., Lic. No. 10012051000428 JF - JDB Foods, Lic. No. 10323999000130.\n4000110.\nAF - Ameya Foods, Lic. No. 11221999000261.\nPROPRIETARY FOOD - NAMKEEN (15.1)\nINGREDIENTS: Cereal Products (67%) (Corn Meal (53%), Rice Meal (14%), Edible Vegetable Oil (Rice Bran Oil), ** Seasoning (Sugar, lodised Salt, Maltodextrin, ~Spices and Condiments, Milk Solids, Cheese Powder, Salt Substitute (Potassium Chloride), Edible Starch, Yeast Extract Flavour Enhancers (627, 631), Flavour (Natural and Nature Identical Flavouring wwwnefices), Acidity Regulators (296, 330), Colour (150d), Gram Meal, Firming Agent (170(1), lodised Salt.\n*As Flavouring Agent. \"Contains Onion and Garlic.\nALLERGEN ADVICE: Contains Milk & Soy. May Contain Wheat.\nNutrition Information ^\nNutrients\nServe Size 20 g **\nEnergy\n6.4 g\nPer 100g\n9%RDA Per Serve\n536 kcal\n596\nGirtahydrate\n4.5 g\nTotal Sugars\n66.5 g\nAdded Sugars\n4.1 g\nTotal fat\n296\nSaturated Fat\n6.4 g\n6%\n27.1 g\n8%\nTrans Fat 0.1 g\nPoum\n770 mg\n8%\n1%\naproximate Valuec\nY\nS\nFor d part Vis\nMARKETED BY PepsiCo India Holdings\nfssat Mkt. Lic. No. 1001406400043 For Mkt. address, scan Barco via Smart Consumer App.",
+    "possibleIngredients": [
+      "kurkure & kar ..... plats are mfd. by",
+      "for manufacture batch no",
+      "lic. no. n3 - pepsico india holdings pvt. ltd.",
+      "lic. no. 10012051000428 jf - jdb foods",
+      "lic. no. 10323999000130.",
+      "4000110.",
+      "af - ameya foods",
+      "lic. no. 11221999000261.",
+      "proprietary food - namkeen (15.1)",
+      "cereal products (67%) (corn meal (53%)",
+      "rice meal (14%)",
+      "edible vegetable oil (rice bran oil)",
+      "** seasoning (sugar",
+      "lodised salt",
+      "maltodextrin",
+      "~spices and condiments",
+      "milk solids",
+      "cheese powder",
+      "salt substitute (potassium chloride)",
+      "edible starch"
+    ],
+    "analysisResults": [
+      {
+        "name": "kurkure & kar ..... plats are mfd. by",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "for manufacture batch no",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "lic. no. n3 - pepsico india holdings pvt. ltd.",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "lic. no. 10012051000428 jf - jdb foods",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "lic. no. 10323999000130.",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "4000110.",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "af - ameya foods",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "lic. no. 11221999000261.",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "proprietary food - namkeen (15.1)",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "cereal products (67%) (corn meal (53%)",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "rice meal (14%)",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "edible vegetable oil (rice bran oil)",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "** seasoning (sugar",
+        "healthScore": -2,
+        "warnings": [
+          "High sugar content"
+        ],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "medium",
+        "recommendation": "avoid"
+      },
+      {
+        "name": "lodised salt",
+        "healthScore": -1,
+        "warnings": [
+          "High sodium content"
+        ],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "avoid"
+      },
+      {
+        "name": "maltodextrin",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "~spices and condiments",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "milk solids",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "cheese powder",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      },
+      {
+        "name": "salt substitute (potassium chloride)",
+        "healthScore": -1,
+        "warnings": [
+          "High sodium content"
+        ],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "avoid"
+      },
+      {
+        "name": "edible starch",
+        "healthScore": 0,
+        "warnings": [],
+        "benefits": [],
+        "category": "neutral",
+        "severity": "low",
+        "recommendation": "accept"
+      }
+    ],
+    "productRecommendation": {
+      "recommendation": "caution",
+      "healthGrade": "C",
+      "buyAdvice": "⚠️ Use Caution - Mixed ingredients, consume in moderation",
+      "confidence": 26,
+      "averageScore": -0.2,
+      "reasoning": [],
+      "summary": {
+        "totalIngredients": 20,
+        "harmfulCount": 0,
+        "beneficialCount": 0,
+        "highSeverityCount": 0,
+        "overallScore": 4.7
+      }
+    },
+    "totalIngredients": 20,
+    "overallScore": 4.7,
+    "cloudinaryInfo": {
+      "public_id": "ingredient-analysis/s0f8gjwp9htj9rvxfisr",
+      "width": 750,
+      "height": 1000
+    },
+    "analysisMetadata": {
+      "analyzedAt": "2025-09-24T01:31:16.297Z",
+      "standards": "WHO & OpenFoodFacts",
+      "version": "2.0",
+      "processingTime": "0 seconds"
+    }
+  },
+  "summary": {
+    "totalIngredients": 20,
+    "overallScore": 4.7,
+    "warningCount": 3
+  },
+  "imageInfo": {
+    "imageUrl": "https://res.cloudinary.com/dhg1f3dab/image/upload/v1758677474/ingredient-analysis/s0f8gjwp9htj9rvxfisr.jpg",
+    "cloudinaryInfo": {
+      "public_id": "ingredient-analysis/s0f8gjwp9htj9rvxfisr",
+      "width": 750,
+      "height": 1000
+    }
+  },
+  "metadata": {
+    "savedFrom": "mobile_app_scan",
+    "deviceInfo": {
+      "platform": "android",
+      "timestamp": "2025-09-24T01:32:16.567Z"
+    }
+  }
+}
